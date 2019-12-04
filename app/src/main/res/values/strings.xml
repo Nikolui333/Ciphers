@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ciphers</string>
+    <string name="main_menu">Главное меню</string>
+    <string name="cipher">ЗАШИФРОВАТЬ ТЕКСТ</string>
+    <string name="decryption">РАСШИФРОВАТЬ ТЕКСТ</string>
+    <string name="nameListString">Шифры</string>
+    <string name="nameCaesar">Шифр Цезаря</string>
+</resources>
