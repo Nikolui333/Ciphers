@@ -18,4 +18,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, List.class);
         startActivity(intent);
     }
+
+    public void buttonDecryption(View view) {
+        Intent intent = new Intent(this, List2.class);
+        startActivity(intent);
+    }
+
+
 }

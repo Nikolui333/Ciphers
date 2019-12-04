@@ -8,10 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import static com.example.ciphers.R.id.editTextCeasar;
 
-public class CeasarCipher extends AppCompatActivity {
+public class CeasarCipher {
 
    // TextView temp;
-    
+
 
     public String cipher(String str, int key){
 
@@ -88,9 +88,6 @@ public class CeasarCipher extends AppCompatActivity {
                 new_str += (char) y;
             }
 
-            else  if (a==1105){
-
-            }
         }
         return new_str;
     }
