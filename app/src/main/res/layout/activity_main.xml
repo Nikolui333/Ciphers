@@ -5,39 +5,24 @@
     android:layout_height="match_parent"
     >
 
-
     <TextView
-        android:layout_marginTop="30dp"
-        android:id="@+id/menu"
+        android:id="@+id/nameList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_menu"
-        android:textSize="42sp"
-        android:layout_centerHorizontal="true"
-         />
+        android:text="@string/nameListString"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/cipher"
+        android:id="@+id/caesar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/menu"
-        android:text="@string/cipher"
-        android:textSize="42sp"
+        android:layout_below="@id/nameList"
+        android:text="@string/nameCaesar"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:onClick="buttonChipher"
-        />
-
-    <Button
-        android:id="@+id/decryption"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/cipher"
-        android:text="@string/decryption"
-        android:textSize="42sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:onClick="buttonDecryption"
-        />
+        android:onClick="buttonCeasar"/>
 
 </RelativeLayout>

@@ -32,4 +32,17 @@ public class Ceasar extends AppCompatActivity {
 
         etRes.setText(cipher.cipher(cip, key));
     }
+
+    public void buttonCeasar2(View view) {
+
+        CeasarCipher cipher = new CeasarCipher();
+
+        String cip = etText.getText().toString();
+        int key = Integer.parseInt(etKey.getText().toString().trim())*(-1);
+
+        etRes = (EditText) findViewById(R.id.editTextCeasar);
+
+        etRes.setText(cipher.cipher(cip, key));
+
+    }
 }

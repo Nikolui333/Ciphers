@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void buttonDecryption(View view) {
-        Intent intent = new Intent(this, List2.class);
+    public void buttonCeasar(View view) {
+        Intent intent = new Intent(this, Ceasar.class);
         startActivity(intent);
     }
 
