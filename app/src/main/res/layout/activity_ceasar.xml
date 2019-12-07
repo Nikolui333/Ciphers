@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="@string/nameCaesar"
         android:paddingTop="30dp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
         android:paddingRight="10dp"
         android:paddingLeft="100dp"
         android:textSize="30sp"
@@ -20,7 +20,7 @@
     <EditText
         android:id="@+id/editKey"
         android:layout_below="@id/nameCeasar"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите числовой ключ"
@@ -29,13 +29,25 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 
+    <Button
+        android:id="@+id/buttonKey"
+        android:layout_below="@id/editKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/keyGenerator"
+        android:onClick="buttonKey"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+
+        />
+
     <EditText
         android:id="@+id/editText"
-        android:layout_below="@id/editKey"
+        android:layout_below="@id/buttonKey"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_weight="1"
+        android:layout_height="120dp"
         android:hint="Введите текст, который нужно заифровать (расшифровать)"
         android:inputType="textMultiLine"
         android:gravity="top"
@@ -47,8 +59,7 @@
         android:layout_below="@id/editText"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_weight="1"
+        android:layout_height="120dp"
         android:hint="Результат шифровки (расшифровки)"
         android:inputType="textMultiLine"
         android:gravity="top"

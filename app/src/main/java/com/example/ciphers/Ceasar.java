@@ -43,6 +43,20 @@ public class Ceasar extends AppCompatActivity {
         etRes = (EditText) findViewById(R.id.editTextCeasar);
 
         etRes.setText(cipher.cipher(cip, key));
+    }
 
+    public void buttonKey(View view){
+        KeyGenerator generator = new KeyGenerator();
+
+        etKey = (EditText) findViewById(R.id.editKey);
+
+        int key = generator.appropriation();
+
+            key=key%100;
+
+
+        String res = key+"";
+
+        etKey.setText(res);
     }
 }

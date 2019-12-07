@@ -13,5 +13,7 @@
 
     <string name="buttonDecryption">Расшифровать</string>
     <string name="buttonCipher">Зашифровать</string>
+    
+    <string name="keyGenerator">СГЕНЕРИРОВАТЬ КЛЮЧ</string>
 
 </resources>
