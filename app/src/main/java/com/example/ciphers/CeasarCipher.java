@@ -48,13 +48,13 @@ public class CeasarCipher {
                 new_str += (char) y;
             }
 
-            else if (a>47&&a<=57){
+            else if (a>48&&a<=57){
                 int key2=key;
                 if (key<0){
                     key2=10+key%10;
                 }
                 c = (str.charAt(j)+key2);
-                y = (c - 47) % 10 + 47;
+                y = (c - 48) % 10 + 48;
                 new_str += (char) y;
             }
 

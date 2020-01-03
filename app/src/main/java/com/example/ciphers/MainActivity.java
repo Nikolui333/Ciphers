@@ -14,15 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void buttonChipher(View view) {
-        Intent intent = new Intent(this, List.class);
-        startActivity(intent);
-    }
-
     public void buttonCeasar(View view) {
         Intent intent = new Intent(this, Ceasar.class);
         startActivity(intent);
     }
 
+    public void buttonGronsfeld(View view) {
+        Intent intent = new Intent(this, GronsfeldActivity.class);
+        startActivity(intent);
+    }
 
 }

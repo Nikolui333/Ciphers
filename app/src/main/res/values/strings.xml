@@ -9,11 +9,12 @@
 
     <string name="nameCaesar">Шифр Цезаря</string>
     <string name="nameCaesar2">Шифр Цезаря (Расшифровка)</string>
+    <string name="Gronsveld">Шифр Гронсфельда</string>
 
 
     <string name="buttonDecryption">Расшифровать</string>
     <string name="buttonCipher">Зашифровать</string>
-    
+
     <string name="keyGenerator">СГЕНЕРИРОВАТЬ КЛЮЧ</string>
 
 </resources>

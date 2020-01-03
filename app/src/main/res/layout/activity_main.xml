@@ -10,19 +10,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nameListString"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/caesar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/nameList"
         android:text="@string/nameCaesar"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_centerHorizontal="true"
         android:onClick="buttonCeasar"/>
+
+
+    <Button
+        android:id="@+id/gronfeld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caesar"
+        android:text="@string/Gronsveld"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonGronsfeld"/>
+
 
 </RelativeLayout>
