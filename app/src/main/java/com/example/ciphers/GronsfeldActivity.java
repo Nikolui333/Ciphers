@@ -20,49 +20,51 @@ public class GronsfeldActivity extends AppCompatActivity {
     }
 
     public void buttonCeasar(View view) {
-        Gronsfeld gronsfeld = new Gronsfeld();
+        try {
+            Gronsfeld gronsfeld = new Gronsfeld();
 
-        String cip = etText.getText().toString();
-        int key = Integer.parseInt(etKey.getText().toString().trim());
+            String cip = etText.getText().toString();
+            int key = Integer.parseInt(etKey.getText().toString().trim());
 
-        String str = Integer.toString(key);
-        int[] arrKey = new int[str.length()];
-        int newKey = key;
-        for (int i = str.length() - 1; i >= 0; i--) { //разбиение ключа на части, для создания ключей для разных символов
-            arrKey[i] = key % 10;
-            if (arrKey[i]==0){
-                arrKey[i]++;
+            String str = Integer.toString(key);
+            int[] arrKey = new int[str.length()];
+            int newKey = key;
+            for (int i = str.length() - 1; i >= 0; i--) { //разбиение ключа на части, для создания ключей для разных символов
+                arrKey[i] = key % 10;
+                key /= 10;
             }
-            key /= 10;
+
+            etRes = (EditText) findViewById(R.id.editTextCeasar);
+
+            etRes.setText(gronsfeld.encryption(cip, arrKey ,newKey));
+        }catch (Exception ex){
+
         }
-
-        etRes = (EditText) findViewById(R.id.editTextCeasar);
-
-        etRes.setText(gronsfeld.encryption(cip, arrKey ,newKey));
     }
 
     public void buttonCeasar2(View view) {
+        try {
+            Gronsfeld gronsfeld = new Gronsfeld();
 
-        Gronsfeld gronsfeld = new Gronsfeld();
+            String cip = etText.getText().toString();
 
-        String cip = etText.getText().toString();
+            int key = Integer.parseInt(etKey.getText().toString().trim());
 
-        int key = Integer.parseInt(etKey.getText().toString().trim()); // менять нужно эту строку
+            String str = Integer.toString(key);
+            int[] arrKey = new int[str.length()];
+            int newKey = key;
+            for (int i = str.length() - 1; i >= 0; i--) {
+                arrKey[i] = key % 10*(-1);
 
-        String str = Integer.toString(key);
-        int[] arrKey = new int[str.length()];
-        int newKey = key;
-        for (int i = str.length() - 1; i >= 0; i--) {
-            arrKey[i] = key % 10*(-1);
-            if (arrKey[i]==0){
-                arrKey[i]++;
+                key /= 10;
             }
-            key /= 10;
+
+            etRes = (EditText) findViewById(R.id.editTextCeasar);
+
+            etRes.setText(gronsfeld.encryption(cip, arrKey ,newKey));
+        }catch (Exception ex){
+
         }
-
-        etRes = (EditText) findViewById(R.id.editTextCeasar);
-
-        etRes.setText(gronsfeld.encryption(cip, arrKey ,newKey));
     }
 
     public void buttonKey(View view){
@@ -71,8 +73,20 @@ public class GronsfeldActivity extends AppCompatActivity {
         etKey = (EditText) findViewById(R.id.editKey);
 
         int key = generator.appropriation();
+        String str = ""+key;
 
-        String res = key+"";
+        int[] arrKey = new int[str.length()];
+        for (int i=0;i<str.length();i++){
+            arrKey[i] = key % 10;
+             if (arrKey[i]==0){
+                        arrKey[i]++;
+                    }
+            key /= 10;
+        }
+        String res ="";
+        for (int i=0;i<str.length();i++){
+            res+=arrKey[i];
+        }
 
         etKey.setText(res);
     }

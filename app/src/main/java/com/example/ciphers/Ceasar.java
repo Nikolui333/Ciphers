@@ -23,26 +23,33 @@ public class Ceasar extends AppCompatActivity {
     }
 
     public void buttonCeasar(View view) {
-        CeasarCipher cipher = new CeasarCipher();
+        try {
+            CeasarCipher cipher = new CeasarCipher();
 
-        String cip = etText.getText().toString();
-        int key = Integer.parseInt(etKey.getText().toString().trim());
+            String cip = etText.getText().toString();
+            int key = Integer.parseInt(etKey.getText().toString().trim());
 
-        etRes = (EditText) findViewById(R.id.editTextCeasar);
+            etRes = (EditText) findViewById(R.id.editTextCeasar);
 
-        etRes.setText(cipher.cipher(cip, key));
+            etRes.setText(cipher.cipher(cip, key));
+        }catch (Exception ex){
+
+        }
     }
 
     public void buttonCeasar2(View view) {
+        try {
+            CeasarCipher cipher = new CeasarCipher();
 
-        CeasarCipher cipher = new CeasarCipher();
+            String cip = etText.getText().toString();
+            int key = Integer.parseInt(etKey.getText().toString().trim())*(-1);
 
-        String cip = etText.getText().toString();
-        int key = Integer.parseInt(etKey.getText().toString().trim())*(-1);
+            etRes = (EditText) findViewById(R.id.editTextCeasar);
 
-        etRes = (EditText) findViewById(R.id.editTextCeasar);
+            etRes.setText(cipher.cipher(cip, key));
+        }catch (Exception ex){
 
-        etRes.setText(cipher.cipher(cip, key));
+        }
     }
 
     public void buttonKey(View view){
