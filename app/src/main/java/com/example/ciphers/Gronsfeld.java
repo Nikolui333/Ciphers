@@ -58,7 +58,7 @@ public class Gronsfeld {
                 counter++;
             }
 
-            else if (symbols[i]>48&&symbols[i]<=57){ //числа
+            else if (symbols[i]>=48&&symbols[i]<=57){ //числа
                 int key2=arrKey[counter];
                 if (arrKey[counter]<0){
                     key2=10+arrKey[counter]%10;

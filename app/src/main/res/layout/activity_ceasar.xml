@@ -12,9 +12,8 @@
         android:text="@string/nameCaesar"
         android:paddingTop="30dp"
         android:paddingBottom="10dp"
-        android:paddingRight="10dp"
-        android:paddingLeft="100dp"
         android:textSize="30sp"
+        android:gravity="center"
         />
 
     <EditText
