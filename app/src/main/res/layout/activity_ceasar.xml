@@ -14,6 +14,7 @@
         android:paddingBottom="10dp"
         android:textSize="30sp"
         android:gravity="center"
+        android:textColor="@android:color/black"
         />
 
     <EditText
@@ -38,7 +39,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="20dp"
-
+        android:background="#0000CD"
+        android:textColor="@android:color/white"
         />
 
     <EditText
@@ -79,6 +81,8 @@
         android:layout_alignParentLeft="true"
     	android:layout_alignLeft="@id/buttonDecryption"
         android:layout_marginLeft="20dp"
+        android:background="#0000CD"
+        android:textColor="@android:color/white"
         />
 
     <Button
@@ -95,6 +99,8 @@
         android:onClick="buttonCeasar2"
     	android:layout_centerHorizontal="true"
         android:layout_marginRight="20dp"
+        android:background="#0000CD"
+        android:textColor="@android:color/white"
         />
 </RelativeLayout>
 

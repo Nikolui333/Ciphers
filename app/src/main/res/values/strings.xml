@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Ciphers</string>
+    <string name="app_name">Шифры</string>
     <string name="main_menu">Главное меню</string>
 
     <string name="cipher">ЗАШИФРОВАТЬ</string>
     <string name="decryption">РАСШИФРОВАТЬ</string>
 
-    <string name="nameListString">Шифры</string>
+    <string name="nameListString">Меню</string>
 
     <string name="nameCaesar">Шифр Цезаря</string>
     <string name="nameCaesar2">Шифр Цезаря (Расшифровка)</string>

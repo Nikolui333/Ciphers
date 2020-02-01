@@ -1,6 +1,6 @@
 package com.example.ciphers;
 
-public class KeyGenerator {
+public class KeyGenerator { // генератор ключей
 
     int cMass [] = {990001, 990013, 990023, 990037, 990043, 990053, 990137, 990151, 990163, 990169, 990179, 990181, 990211, 990239, 990259, 990277, 990281, 990287,
             990289, 990293, 990307, 990313, 990323, 990329, 990331, 990349, 990359, 990361, 990371, 990377, 990383, 990389, 990397, 990463, 990469, 990487, 990497,
@@ -50,7 +50,6 @@ public class KeyGenerator {
         double rand = Math.random()*this.x.length;
         int randInd = (int) rand;
         int res = x[randInd];
-        //String str = res+"";
 
         return res;
 

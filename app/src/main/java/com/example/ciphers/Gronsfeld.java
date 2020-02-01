@@ -1,7 +1,5 @@
 package com.example.ciphers;
 
-import java.util.Scanner;
-
 public class Gronsfeld {
 
     public String encryption(String text, int [] arrKey, int key){

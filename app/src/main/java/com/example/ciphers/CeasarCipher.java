@@ -10,9 +10,6 @@ import static com.example.ciphers.R.id.editTextCeasar;
 
 public class CeasarCipher {
 
-   // TextView temp;
-
-
     public String cipher(String str, int key){
 
         int c = 0;

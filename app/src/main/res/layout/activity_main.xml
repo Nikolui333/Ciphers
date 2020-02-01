@@ -13,7 +13,9 @@
         android:textSize="40sp"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        />
 
     <Button
         android:id="@+id/caesar"
@@ -26,7 +28,12 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_centerHorizontal="true"
-        android:onClick="buttonCeasar"/>
+        android:onClick="buttonCeasar"
+        android:background="#0000CD"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
 
 
     <Button
@@ -40,7 +47,12 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_centerHorizontal="true"
-        android:onClick="buttonGronsfeld"/>
+        android:onClick="buttonGronsfeld"
+        android:background="#0000CD"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
 
 
 </RelativeLayout>
